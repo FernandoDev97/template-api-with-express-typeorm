@@ -1,0 +1,11 @@
+version: '3'
+
+services: 
+  api-gym-pass-style-pg:
+    image: bitnami/postgresql:latest
+    ports: 
+      - 5432:5432
+    environment: 
+      - POSTGRESQL_USERNAME=api-academy
+      - POSTGRESQL_PASSWORD=api-academy
+      - POSTGRESQL_DATABASE=api_rest
